@@ -1,0 +1,89 @@
+/*
+Colors -
+The Calm Before The Storm @ color-hex.com
+Fonts -
+Josefin Sans @ fonts.google.com
+*/
+body{
+	font-family: 'Josefin Sans', monospace;
+	background-color: #232231;
+}
+#main-content{
+	text-align: center;
+}
+h1{
+	text-align: center;
+	color: #f49250;
+	padding-top: 40px;
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+#desc{
+  color: white;
+}
+a{
+  color: white;
+}
+#disp{
+  border-radius: 25px;
+  border: 1px solid #ffffff;
+  color: #f49250;
+  margin-top: 40px;
+  width: 600px; 
+  height: 50px;
+  font-size: 22px;
+  padding: 8px;
+  resize: none;
+  overflow: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+div::-webkit-scrollbar { 
+    display: none;
+}
+textarea {
+  border-radius: 25px;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  background-color: #232231;
+  margin-top: 40px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 20px;
+  width: 600px; 
+  height: 100px;
+  font-size:24px;
+  resize: none;
+  overflow: auto;
+}
+textarea:focus {
+    box-shadow: 0 0 10px #ffffff;
+    border: 2px solid #ffffff;
+    outline: none;
+    resize: none;
+    overflow: auto;
+}
+textarea::-webkit-scrollbar { 
+    display: none;
+}
+span {
+    color: white;
+}
+span.neg {
+    color: red;
+}
+span.pos {
+  color: green;
+}
+span.stop {
+  color: cyan;
+}
+footer {
+	padding: 10px;
+	color: #f49250;
+	position:fixed;
+ 	bottom:0;
+ 	left:0;
+}

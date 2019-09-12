@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>JCARD</title>
+        <link rel="icon" type="image/png" href="assets/logo.png">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Teko" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700&display=swap" rel="stylesheet">
+        <!-- jQuery (Bootstrap JS plugins depend on it) -->
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/node_jaccard.js"></script>
+        <script src="js/script.js"></script>
+    </head>
+    <body>
+        <div id="main-content">
+            <h1>JCARD</h1>
+            <p id="desc">A text similarity app based on <a href="https://en.wikipedia.org/wiki/Jaccard_index" target="_blank">Jaccard Similarity Index</a></p>
+            <textarea id="sentence1" name="sentence1" placeholder="Type the first sentence and hit Tab...." autofocus></textarea>
+            <textarea id="sentence2" name="sentence2" placeholder="Type the second sentence and hit Enter...." ></textarea>
+            <div id="disp"></div>
+        </div>
+        
+        <footer class="container-fluid text-center">
+            <p>Designed and Coded by : surhud004 &copy; 2019</p><!--Build Date: 12th September 2019-->
+        </footer>
+        <script type="text/javascript">
+            var input1 = document.getElementById("sentence1");
+            var input2 = document.getElementById("sentence2");
+            input2.addEventListener("keyup", function(event) {
+            if (event.keyCode === 13) {
+                event.preventDefault();
+                analyze_it();
+                input1.value = "";
+                input2.value = "";
+                input1.focus();
+                }
+            });
+        </script>
+    </body>
+</html>
