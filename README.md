@@ -8,3 +8,5 @@
 ### Acknowledgement
 
 - [Paul Jaccard](https://en.wikipedia.org/wiki/Paul_Jaccard)
+
+*Caution: Jaccard Similarity is NOT the best algorithm for text similarity analysis. This app was made just out of curiosity.
